@@ -80,7 +80,7 @@ window.onSpotifyWebPlaybackSDKReady = () => {
                   <h5 class="card-title">${trackName}</h5>
                   <p class="card-text">Artist: ${artistName}</p>
                   <p class="card-text">Track: ${albumName}</p>
-                  <div>
+                  <div class="text-center">
                     <button class="btn btn-primary play-button" data-uri="${track.uri}"><i class="fas fa-play"></i></button>
                     <button class="btn btn-primary pause-button" data-uri="${track.uri}"><i class="fas fa-pause"></i></button>
                     <button class="btn btn-primary seek-button" data-uri="${track.uri}" data-position="30000"><i class="fas fa-forward"></i></button>
@@ -90,22 +90,6 @@ window.onSpotifyWebPlaybackSDKReady = () => {
                 </div>
               </div>
             `;
-
-      //   const cardContent = `
-      // <div class="card">
-      //   <img src="${imageUrl}" class="card-img-top" alt="${trackName} Cover">
-      //   <div class="card-body">
-      //     <h5 class="card-title">${trackName}</h5>
-      //     <p class="card-text">Artist: ${artistName}</p>
-      //     <p class="card-text">Track: ${albumName}</p>
-      //     <button class="btn btn-primary play-button" data-uri="${track.uri}">Play</button>
-      //     <button class="btn btn-primary pause-button" data-uri="${track.uri}">Pause</button>
-      //     <button class="btn btn-primary seek-button" data-uri="${track.uri}" data-position="30000">Seek to 30s</button>
-      //     <button class="btn btn-primary queue-button" data-uri="${track.uri}">Retrieve Queue</button>
-      //     <div class="queue-results" data-uri="${track.uri}"></div>
-      //   </div>
-      // </div>`;
-      // new
       trackCard.innerHTML = cardContent;
       resultsDiv.appendChild(trackCard);
       trackCard.querySelector(".play-button").addEventListener("click", () => {
@@ -217,3 +201,4 @@ window.onSpotifyWebPlaybackSDKReady = () => {
     }
   }
 }
+

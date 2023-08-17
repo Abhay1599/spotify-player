@@ -1,0 +1,70 @@
+/* Set body background and text color */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("20.jpg");
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+/* Center content vertically and horizontally */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Style the login container */
+.login-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style the login button */
+#loginButton {
+  background-color: #1db954;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Hover effect for the login button */
+#loginButton:hover {
+  background-color: #168845;
+}
+
+/* Focus style for the login button */
+#loginButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #1db954;
+}
+
+/* Active style for the login button */
+#loginButton:active {
+  background-color: #126b3f;
+}
+
+/* Style the logo */
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+  box-shadow: rgb(28 28 28) 0px -1px 20px 10px;
+  border-radius: 50%;
+}
+
+.bg {
+  height: 350px;
+  border-radius: 50%;
+  background-color: #ffffff47;
+  width: 350px;
+  box-shadow: #abab9e 3px -1px 108px;
+}
