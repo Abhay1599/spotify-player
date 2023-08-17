@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Callback</title>
+</head>
+
+<body>
+  <script>
+    // Extract access token from URL
+    const accessToken = getAccessTokenFromURL();
+
+    // Store access token in localStorage
+    if (accessToken) {
+      localStorage.setItem("accessToken", accessToken);
+      window.location.href = "player.html";
+    }
+
+    function getAccessTokenFromURL() {
+      const hashParams = window.location.hash.substr(1).split("&");
+      const tokenParam = hashParams.find(param => param.startsWith("access_token="));
+      if (tokenParam) {
+        return tokenParam.split("=")[1];
+      }
+      return null;
+    }
+  </script>
+</body>
+
+</html>

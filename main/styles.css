@@ -1,0 +1,128 @@
+/* styles.css */
+body {
+  background-color: #222;
+  color: #fff;
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+.jumbotron {
+  background-color: #1DB954;
+  color: #fff;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  background-color: #1DB954;
+  border-color: #1DB954;
+}
+
+.btn-primary:hover {
+  background-color: #0E8343;
+  border-color: #0E8343;
+}
+
+.card {
+  background-color: #333;
+  border-color: #1DB954;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  color: #1DB954;
+}
+
+.play-button,
+.pause-button,
+.seek-button,
+.queue-button {
+  background-color: #1DB954;
+  border-color: #1DB954;
+  margin-top: 0.5rem;
+}
+
+.play-button:hover,
+.pause-button:hover,
+.seek-button:hover,
+.queue-button:hover {
+  background-color: #0E8343;
+  border-color: #0E8343;
+}
+
+.queue-list {
+  list-style: none;
+  padding: 0;
+}
+
+.queue-results {
+  margin-top: 1rem;
+}
+
+
+/* Adjust button spacing */
+.play-button,
+.pause-button,
+.seek-button,
+.queue-button {
+  margin-top: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+#searchInput
+{
+  height: 46px;
+}
+/* Spotify icon */
+.spotify-icon {
+  color: #1DB954;
+  font-size: 2rem;
+}
+
+
+/* Adjust button spacing and remove focus and hover blue color */
+.play-button,
+.pause-button,
+.seek-button,
+.queue-button {
+  margin-top: 0.3rem;
+  margin-right: 0.3rem;
+  background-color: #1DB954 !important;
+  border-color: #1DB954 !important;
+  outline: none !important;
+}
+
+.play-button:hover,
+.pause-button:hover,
+.seek-button:hover,
+.queue-button:hover {
+  background-color: #0E8343 !important;
+  border-color: #0E8343 !important;
+  box-shadow: none;
+}
+
+.play-button:active,
+.pause-button:active,
+.seek-button:active,
+.queue-button:active {
+  background-color: #0E8343 !important;
+  border-color: #0E8343 !important;
+  box-shadow: none;
+
+}
+
+.play-button:focus,
+.pause-button:focus,
+.seek-button:focus,
+.queue-button:focus {
+  background-color: #0E8343 !important;
+  border-color: #0E8343 !important;
+  box-shadow: none;
+
+}
+
